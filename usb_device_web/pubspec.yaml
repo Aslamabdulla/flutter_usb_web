@@ -1,0 +1,32 @@
+name: usb_device_web
+description: A stub implementation of the Device usb plugin for Web. This package is used in usb_device plugin
+version: 1.0.0
+repository: https://github.com/Apparence-io/webUSB_plugin/
+
+environment:
+  sdk: ">=2.17.3 <3.0.0"
+  flutter: ">=1.20.0"
+
+
+flutter:
+  plugin:
+    platforms:
+      web:
+        pluginClass: WebUSBPlugin
+        fileName: usb_device_web.dart
+  assets:
+    - assets/webusb.js
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  usb_device_platform_interface: ^1.0.0
+  js: ^0.6.5
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
